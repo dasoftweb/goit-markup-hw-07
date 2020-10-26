@@ -1,0 +1,14 @@
+@import "./utils/variables";
+
+@import "./base/common";
+@import "./base/container";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/advantages";
+@import "./layout/skills";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+
+@import "./components/modal";

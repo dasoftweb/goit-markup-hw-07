@@ -1,0 +1,132 @@
+.footer {
+    background: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+  }
+  
+  .footer .container {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .logo-light {
+    display: block;
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .address-block {
+    width: 230px;
+    margin-right: 70px;
+  }
+  
+  .address-block li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+  
+  .footer-contacts {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .social-block__text, .subscribe-block__text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+  
+  .social-block .list {
+    display: flex;
+  }
+  
+  .social-block {
+    margin-right: 93px;
+  }
+  
+  .social-block li:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .social-block .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color $main-transition $cubic;
+  }
+  
+  .social-block .link:hover, .social-block .link:focus {
+    background-color: $accent-color;
+  }
+  
+  .footer-icon, .send-icon {
+    fill: #ffffff;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .subcribe-form {
+    display: flex;
+  }
+  
+  .subcribe-form__input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    margin-right: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 15px;
+  }
+  
+  .subcribe-form__input::placeholder {
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .subcribe-form__btn, .modal-form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    min-width: 200px;
+    height: 50px;
+    color: #ffffff;
+    background: $accent-color;
+    border-radius: 4px;
+    border-color: $accent-color;
+    cursor: pointer;
+  }
+  
+  .send-icon {
+    margin-left: 10px;
+  }

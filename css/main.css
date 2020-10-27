@@ -675,12 +675,12 @@ body {
   margin-bottom: 20px;
 }
 
-.social-block .list {
-  display: flex;
-}
-
 .social-block {
   margin-right: 93px;
+}
+
+.social-block .list {
+  display: flex;
 }
 
 .social-block li:not(:last-child) {
@@ -700,12 +700,6 @@ body {
 
 .social-block .link:hover, .social-block .link:focus {
   background-color: #2196f3;
-}
-
-.footer-icon, .send-icon {
-  fill: #ffffff;
-  width: 20px;
-  height: 20px;
 }
 
 .subcribe-form {
@@ -728,6 +722,12 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-icon, .send-icon {
+  fill: #ffffff;
+  width: 20px;
+  height: 20px;
 }
 
 .send-icon {

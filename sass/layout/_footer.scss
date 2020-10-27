@@ -45,61 +45,62 @@
     margin-bottom: 20px;
   }
   
-  .social-block .list {
-    display: flex;
-  }
-  
   .social-block {
     margin-right: 93px;
+
+    & .list {
+      display: flex;
+    }
+
+    & li:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    & .link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      transition: background-color $main-transition $cubic;
+    }
+
+    & .link:hover, & .link:focus {
+      background-color: $accent-color;
+    }
+
   }
   
-  .social-block li:not(:last-child) {
-    margin-right: 10px;
-  }
-  
-  .social-block .link {
+  .subcribe-form {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    transition: background-color $main-transition $cubic;
+
+    &__input {
+      width: 358px;
+      height: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      background-color: transparent;
+      margin-right: 12px;
+      color: rgba(255, 255, 255, 0.6);
+      padding: 15px;
+    }
+
+    &__input::placeholder {
+      font-size: 16px;
+      line-height: 20px;
+      color: rgba(255, 255, 255, 0.6);
+    }
   }
-  
-  .social-block .link:hover, .social-block .link:focus {
-    background-color: $accent-color;
-  }
-  
+
   .footer-icon, .send-icon {
     fill: #ffffff;
     width: 20px;
     height: 20px;
   }
-  
-  .subcribe-form {
-    display: flex;
-  }
-  
-  .subcribe-form__input {
-    width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background-color: transparent;
-    margin-right: 12px;
-    color: rgba(255, 255, 255, 0.6);
-    padding: 15px;
-  }
-  
-  .subcribe-form__input::placeholder {
-    font-size: 16px;
-    line-height: 20px;
-    color: rgba(255, 255, 255, 0.6);
-  }
-  
+
   .send-icon {
     margin-left: 10px;
   }

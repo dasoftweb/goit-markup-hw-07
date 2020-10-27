@@ -1,56 +1,42 @@
 .header {
     padding: 25px 0;
     border-bottom: 1px solid #ececec;
-  }
-  
-  .header .container {
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
+
+    & .container {
+      display: flex;
+      margin: 0 auto;
+      align-items: center;
+    }
   }
   
   .navigation {
     display: flex;
     align-items: center;
-  }
-  
-  .navigation .list {
-    display: flex;
-  }
-  
-  .menu-item:not(:last-child) {
-    margin-right: 50px;
+
+    & .list {
+      display: flex;
+    }
   }
   
   .menu-item {
     position: relative;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
   
   .address {
     margin-left: auto;
-  }
-  
-  .address .list {
-    display: flex;
-  }
-  
-  .address .list-item {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo-dark {
-    font-family: $secondary-font;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.192;
-    letter-spacing: 0.03em;
-    color: #000000;
-    margin-right: 90px;
-  }
-  
-  .logo-part {
-    color: $accent-color;
+
+    & .list {
+      display: flex;
+    }
+
+    & .list-item {
+      display: flex;
+      align-items: center;
+    }
   }
   
   .list-item {
@@ -61,14 +47,16 @@
     color: $main-title-color;
     font-style: normal;
     transition: color $main-transition $cubic;
+
+    &:hover, 
+    &:focus, 
+    &:active {
+      color: $accent-color;
+    }
   }
   
   .header-contacts {
     color: $main-descriprion-color;
-  }
-  
-  .list-item:hover, .list-item:focus {
-    color: $accent-color;
   }
   
   .menu-icon {
@@ -77,25 +65,26 @@
     max-height: 16px;
     max-width: 16px;
     transition: fill $main-transition $cubic;
+
+    .list-item:hover &, 
+    .list-item:focus & {
+      fill: $accent-color;
+    }
   }
-  
-  .list-item:hover .menu-icon, .list-item:focus .menu-icon {
-    fill: $accent-color;
-  }
-  
-  .list-item:hover, .list-item:focus, .list-item:active, .current {
+
+  .current {
     color: $accent-color;
-  }
-  
-  .current::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 4px;
-    transform: translateY(800%);
-    background: $accent-color;
-    border-radius: 2px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 4px;
+      transform: translateY(800%);
+      background: $accent-color;
+      border-radius: 2px;
+    }
   }

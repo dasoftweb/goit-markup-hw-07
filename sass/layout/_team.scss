@@ -2,9 +2,19 @@
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: #F5F4FA;
+
+    & .card {
+      background: #FFFFFF;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+    }
+
+    & img {
+      margin-bottom: 30px;
+    }
   }
   
-  .title-team {
+  .team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.167;
@@ -39,43 +49,34 @@
     justify-content: space-between;
   }
   
-  .team img {
-    margin-bottom: 30px;
-  }
-  
-  .team .card {
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-  }
-  
   .social-icons {
     display: flex;
     justify-content: center;
     margin: 0px 32px 30px;
-  }
-  
-  .social-icons li:not(:last-child) {
-    margin-right: 10px;
-  }
-  
-  .social-icons .link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: #fff;
-    transition: background-color $main-transition $cubic;
-  }
-  
-  .social-icons .link:hover, .social-icons .link:focus {
-    background-color: $accent-color;
-  }
-  
-  .social-icons .link:hover .social-icon, .social-icons .link:focus .social-icon {
-    fill: #ffffff;
+
+    & .link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: #fff;
+      transition: background-color $main-transition $cubic;
+    }
+
+    & li:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    & .link:hover, & .link:focus {
+      background-color: $accent-color;
+    }
+
+    & .link:hover .social-icon, & .link:focus .social-icon {
+      fill: #ffffff;
+    }
+
   }
   
   .social-icon {

@@ -654,7 +654,7 @@ body {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #fff;
 }
 
 .footer-contacts {
@@ -671,7 +671,7 @@ body {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #fff;
   margin-bottom: 20px;
 }
 
@@ -724,13 +724,13 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-icon, .send-icon {
-  fill: #ffffff;
+.footer-icon, .subscribe-icon {
+  fill: #fff;
   width: 20px;
   height: 20px;
 }
 
-.send-icon {
+.subscribe-icon {
   margin-left: 10px;
 }
 /*# sourceMappingURL=main.css.map */
